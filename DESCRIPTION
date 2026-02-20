@@ -1,0 +1,19 @@
+Package: align
+Title: Grid Specification Primitive
+Version: 0.0.1
+Authors@R: person("Michael", "Sumner", , "mdsumner@gmail.com", role = c("aut", "cre"))
+Author: Michael Sumner [aut, cre]
+Maintainer: Michael Sumner <mdsumner@gmail.com>
+Description: A single core object for grid specification defined by dimension
+    and extent. Resolution, coordinates, cell indices, and row/column mappings
+    are derived on demand by arithmetic. Crop, expand, resize, and tile
+    operations produce new specs on the same lattice. Pure index arithmetic,
+    no data, no I/O.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests:
+    terra,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
