@@ -3,7 +3,7 @@
 #' A grid specification defined by dimension and extent. Resolution,
 #' coordinates, cell indices, and row/column mappings are derived on demand.
 #'
-#' Dimension is `c(ncol, nrow)`. Extent is `c(xmin, xmax, ymin, ymax)`.
+#' Dimension is `c(ncol, nrow)`, default `c(1L, 1L)` Extent is `c(xmin, xmax, ymin, ymax)`.
 #'
 #' When `extent` is `NULL`, defaults to unit cell space: `c(0, ncol, 0, nrow)`.
 #' This gives an identity mapping where column index = x coordinate and row
@@ -17,7 +17,7 @@
 #' @examples
 #' vast(c(100L, 200L))
 #' vast(c(500L, 300L), extent = c(140, 160, -50, -30))
-vast <- function(dimension, extent = NULL) {
+vast <- function(dimension = c(1L, 1L), extent = NULL) {
   dimension <- as.integer(dimension)
   stopifnot(length(dimension) == 2L, all(dimension > 0L))
 
