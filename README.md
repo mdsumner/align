@@ -1,3 +1,5 @@
+> **Archived.** The grid-alignment functions now live in [hypertidy/vaster](https://github.com/hypertidy/vaster) (`is_aligned()`, `grid_offset()`, `snap_grid()`, `resize_grid()`, `grid_tiles()`), and this design is kept at `inst/design-docs/align-design.md` there.
+
 
 # align
 
